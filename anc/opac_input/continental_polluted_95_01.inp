@@ -1,0 +1,268 @@
+# INPUT FILE FOR OPAC 4.0 (program opac_40) --------------------------------
+#
+# In this file, you have to specify which information you want to
+# extract from the data base.
+#
+# 6 parts of desired data have to be selected:
+#
+# 1. cloud or aerosol type
+# 2. height profile
+# 3. wavelengths
+# 4. relative humidity
+# 5. max. radius for mass calculations
+# 6. optical parameters
+#
+# All lines which don't start with a "#" have to be filled in.
+#
+# Number and order of lines in this file may not be changed.
+#
+# ************************* -------------------------------------------------
+# 1. cloud or aerosol type:
+# *************************
+#
+# The following cloud or aerosol types may be selected by the number in
+# parenthesis. One type may be selected for one program run.
+#
+#  (0) define new mixture
+#
+#  (1) continental clean                 (6) maritime clean
+#  (2) continental average               (7) maritime polluted
+#  (3) continental polluted              (8) maritime tropical
+#  (4) urban                             (9) Arctic
+#  (5) desert                           (10) Antarctic
+#
+# (11) stratus (continental)            (16) fog
+# (12) stratus (maritime)               (17) cirrus 1 (-25 C)
+# (13) cumulus (continental, clean)     (18) cirrus 2 (-50 C)
+# (14) cumulus (continental, polluted)  (19) cirrus 3 (-50 C, + small part.)   
+# (15) cumulus (maritime)
+#
+# ---------------------------------------------------------------------------
+3                                : give here the selected number
+# ---------------------------------------------------------------------------
+#
+# if you did select 0 (define new mixture), in the next 5 lines the
+# component number and the number density in [particles/cm**3] has to be
+# given, divided by commas. The component numbers are the following:
+#
+# There are not more than 7 components allowed to compose one aerosol
+# or cloud type.
+#
+#  (1) insoluble                         (6) mineral (nuclei mode, nonspherical)
+#  (2) water-soluble                     (7) mineral (accumulation mode, nonspherical)
+#  (3) soot                              (8) mineral (coarse mode, nonspherical)
+#  (4) sea-salt (accumulation mode)      
+#  (5) sea-salt (coarse mode)           (10) sulfate
+#
+# (11) stratus (continental)            (15) cumulus (maritime)
+# (12) stratus (maritime)               (16) fog (small drops)
+# (13) cumulus (continental, clean)     (17) fog (large drops)
+# (14) cumulus (continental, polluted)
+#
+# ---------------------------------------------------------------------------
+new type                        : name of new type (max. 30 characters)
+7, 1.                           : number of 1. component, number density
+2, 0.                           : number of 2. component, number density
+3, 0.                           : number of 3. component, number density
+4, 0.                           : number of 4. component, number density
+5, 0.                           : number of 5. component, number density
+5, 0.                           : number of 6. component, number density
+5, 0.                           : number of 7. component, number density
+# ****************** --------------------------------------------------------
+# 2. height profile:
+# ******************
+#
+# In the following 5 lines, you can change the default height profiles
+# of default clouds or aerosol types. If the thickness of all layers is
+# 0., the default values are used. If you don't want to calculate the
+# optical depth, these values are not used, but the lines must not be
+# empty!
+#
+# If you decided to define your own mixture, you should also define a
+# height profile if you want to calculate optical depths.
+#
+# The following data must be given separated by commas, as indicated:
+#
+# Hmin: lower boundary in [km] above ground
+# Hmax: upper boundary in [km] above ground
+#    Z: scale height in [km]
+#    N: number density in [particles/cm**3]
+#
+# ---------------------------------------------------------------------------
+0., 2., 0.245                      :        mixing layer: Hmin, Hmax, Z
+2., 2., 11.                     :       mineral layer: Hmin, Hmax, N
+2., 12., 8.                      :    free troposphere: Hmin, Hmax, Z
+12., 35., 99.                      :        stratosphere: Hmin, Hmax, Z
+0., 0., 99.                      :               cloud: Hmin, Hmax, Z
+# ***************-----------------------------------------------------------
+# 3. wavelengths:
+# ***************
+#
+# In the following list of all available wavelengths, the desired
+# wavelengths must be selected by typing 1 in the first column. 0
+# deselects the wavelength. You may select as many wavelengths
+# as you like.
+#
+# There are two different wavelength lists, one for aerosols and water
+# clouds, and one for cirrus clouds. Only wavelengths belonging to one
+# of these lists may be selected.
+#
+# All wavelengths are given in micrometer.
+#
+# A. aerosols and water clouds ----------------------------------------------
+61                              : number of wavelengths for A. (DON'T CHANGE!)
+0                               : 0.25
+0                               : 0.3
+1                               : 0.35
+1                               : 0.4
+1                               : 0.45
+1                               : 0.5
+1                               : 0.55
+1                               : 0.6
+1                               : 0.65
+1                               : 0.7
+1                               : 0.75
+1                               : 0.8
+1                               : 0.9
+1                               : 1.0
+1                               : 1.25
+1                               : 1.5
+1                               : 1.75
+1                               : 2.0
+1                               : 2.5
+0                               : 3.0
+0                               : 3.2
+0                               : 3.39
+0                               : 3.5
+0                               : 3.75
+0                               : 4.0
+0                               : 4.5
+0                               : 5.0
+0                               : 5.5
+0                               : 6.0
+0                               : 6.2
+0                               : 6.5
+0                               : 7.2
+0                               : 7.9
+0                               : 8.2
+0                               : 8.5
+0                               : 8.7
+0                               : 9.0
+0                               : 9.2
+0                               : 9.5
+0                               : 9.8
+0                               : 10.0
+0                               : 10.6
+0                               : 11.0
+0                               : 11.5
+0                               : 12.5
+0                               : 13.0
+0                               : 14.0
+0                               : 14.8
+0                               : 15.0
+0                               : 16.4
+0                               : 17.2
+0                               : 18.0
+0                               : 18.5
+0                               : 20.0
+0                               : 21.3
+0                               : 22.5
+0                               : 25.0
+0                               : 27.9
+0                               : 30.0
+0                               : 35.0
+0                               : 40.0
+# B. cirrus clouds ----------------------------------------------------------
+32                              : number of wavelengths for B. (DON'T CHANGE!)
+0                               : 0.280
+0                               : 0.300
+0                               : 0.320
+0                               : 0.350
+0                               : 0.355
+0                               : 0.400
+0                               : 0.423
+0                               : 0.532
+0                               : 0.535
+0                               : 0.550
+0                               : 0.635
+0                               : 0.780
+0                               : 0.830
+0                               : 0.873
+0                               : 1.015
+0                               : 1.064
+0                               : 1.100
+0                               : 1.200
+0                               : 1.400
+0                               : 1.449
+0                               : 1.504
+0                               : 1.555
+0                               : 1.615
+0                               : 1.850
+0                               : 1.905
+0                               : 2.000
+0                               : 2.190
+0                               : 2.600
+0                               : 3.077
+0                               : 3.413
+0                               : 3.700
+0                               : 10.00
+# ********************* -----------------------------------------------------
+# 4. relative humidity:
+# *********************
+#
+# In the following list of all available classes of relative humidity,
+# the desired classes are selected by typing 1 in the first column. 0
+# deselects the humidity class. You may select as many humidity classes
+# as you like.
+#
+# ---------------------------------------------------------------------------
+8                               : number of humidity classes  (DON'T CHANGE!)
+0                               :  0%
+0                               : 50%
+0                               : 70%
+0                               : 80%
+0                               : 90%
+1                               : 95%
+0                               : 98%
+0                               : 99%
+# *************************************--------------------------------------
+# 5. max. radius for mass calculations:
+# *************************************
+#
+# Total mass of the aerosol is used in the mass dependent optical properties 
+# and for direct comparison with impaktor measurements. Therefore, the mass 
+# distribution is only integrated up to the largest radius captured by these
+# impaktor system. Be careful to use here the RADIUS and not the diameter, 
+# which usually describes the measurement system.
+#
+# ---------------------------------------------------------------------------
+7.5                             : max. radius to be used for mass calculations
+# ********************** ----------------------------------------------------
+# 6. optical parameters:
+# **********************
+#
+# In the following list of all available optical parameters,
+# the desired parameters are selected by typing 1 in the first column. 0
+# deselects the parameter. You may select as many parameters as you like.
+#
+# ---------------------------------------------------------------------------
+18                              : number of optical parameters (DON'T CHANGE!)
+1                               : extinction coefficient    (extco)
+1                               : scattering      "         (scaco)
+1                               : absorption      "         (absco)
+1                               : single-scattering albedo  (sisca)
+0                               : asymmetry factor          (asymf)
+1                               : optical depth             (odepe)
+0                               :           -----------
+0                               : spectral turbidity factor (turbf)
+0                               : lidar ratio               (lirat)
+1                               : phase function
+0                               : mass ext. cross section   (extra)
+0                               : mass abs. cross section   (absra)
+0                               :           -----------
+0                               : norm. ext. coefficient    (exnor)
+0                               : spectrally weighted coefficients
+0                               : Angstrom coefficients
+1                               : visibility
+0                               : refractive index     (refre,refim)
+# END OF INPUT FILE ---------------------------------------------------------

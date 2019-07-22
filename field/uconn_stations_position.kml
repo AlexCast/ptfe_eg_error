@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>COSBY_2017</name>
+<description><![CDATA[Stations sampled for optical and biological parameters in Long Island Sound during June 2017]]></description>
+
+<Style id="style1">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/1.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style2">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/2.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style3">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/3.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style4">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/4.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style5">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/5.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style6">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/6.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style7">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/7.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style8">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/8.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style9">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/9.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+<Style id="style10">
+  <IconStyle>
+<color>ff05ffff</color>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/10.png</href>
+    </Icon>
+  </IconStyle>
+</Style>
+
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style1</styleUrl>
+  <Point>
+    <coordinates>
+-72.02422,41.31584
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style2</styleUrl>
+  <Point>
+    <coordinates>
+-72.01445,41.30033
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style3</styleUrl>
+  <Point>
+    <coordinates>
+-71.99294,41.28233
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style4</styleUrl>
+  <Point>
+    <coordinates>
+-72.05943,41.29677
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style5</styleUrl>
+  <Point>
+    <coordinates>
+-72.04198,41.24368
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style6</styleUrl>
+  <Point>
+    <coordinates>
+-71.96873,41.30192
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style7</styleUrl>
+  <Point>
+    <coordinates>
+-71.96858,41.31872
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style8</styleUrl>
+  <Point>
+    <coordinates>
+-71.89654,41.30085
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style9</styleUrl>
+  <Point>
+    <coordinates>
+-71.99209,41.30037
+    </coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <description><![CDATA[]]></description>
+  <styleUrl>#style10</styleUrl>
+  <Point>
+    <coordinates>
+-72.08257,41.32844
+    </coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
