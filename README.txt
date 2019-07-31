@@ -1,3 +1,7 @@
+The code available in this directory is released under license GPL Version 3 
+(or higher). See LICENCE_gpl-3.0.txt for more infomration.
+
+
 ##########
 # README #
 ##########
